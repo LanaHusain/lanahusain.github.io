@@ -282,7 +282,7 @@ p {
   & &-picture {
     margin-top: 3rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     .img {
       background-size: cover;
@@ -399,15 +399,12 @@ p {
 // Phone
 @media (max-width: 480px) {
   .fill-container {
-    width: 400px;
+    width: 305px;
   }
 
   .studies {
-    h6 {
-      font-size: 1rem;
-    }
-    h5 {
-      font-size: 1.2rem;
+    .icon {
+      display: none;
     }
   }
 
@@ -417,6 +414,14 @@ p {
     }
     h6 {
       font-size: 1.5rem;
+    }
+  }
+  .gallery {
+    h1 {
+      font-size: 3rem;
+      &::after {
+        width: 0;
+      }
     }
   }
 }

@@ -397,7 +397,7 @@ p {
 .gallery .gallery-picture {
   margin-top: 3rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
 }
 .gallery .gallery-picture .img {
@@ -499,18 +499,21 @@ p {
 }
 @media (max-width: 480px) {
   .fill-container {
-    width: 400px;
+    width: 305px;
   }
-  .studies h6 {
-    font-size: 1rem;
-  }
-  .studies h5 {
-    font-size: 1.2rem;
+  .studies .icon {
+    display: none;
   }
   .cta h2 {
     font-size: 2rem;
   }
   .cta h6 {
     font-size: 1.5rem;
+  }
+  .gallery h1 {
+    font-size: 3rem;
+  }
+  .gallery h1::after {
+    width: 0;
   }
 }/*# sourceMappingURL=main.css.map */
